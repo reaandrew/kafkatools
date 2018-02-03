@@ -13,7 +13,7 @@ public class CommandLineArguments {
   @Option(names = { "-b", "--brokers" }, required = true, description = "The list of brokers")
   public String brokers = "";
 
-  @Option(names = { "-p", "--partition-assignment" }, required = true, description = "The list of brokers")
+  @Option(names = { "-p", "--partition-assignment" }, description = "The list of brokers")
   public String partitionAssignment = "roundrobin";
 
 }

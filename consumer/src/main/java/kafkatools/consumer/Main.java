@@ -35,7 +35,7 @@ public class Main {
                 try{
                   consumerRunnable.join();
                 }catch(Exception ex){
-
+                  System.out.println("Problem stopping the container");
                 }
               }
         });
