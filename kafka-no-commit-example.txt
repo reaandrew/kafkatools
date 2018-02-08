@@ -1,0 +1,8 @@
+              Properties configProperties = new Properties();
+              configProperties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaServers);
+              configProperties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
+              configProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
+              configProperties.put(ConsumerConfig.GROUP_ID_CONFIG, groupId);
+              configProperties.put(ConsumerConfig.CLIENT_ID_CONFIG, "simple_consumer");
+              configProperties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false);
+              configProperties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earliest");
